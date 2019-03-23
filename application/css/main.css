@@ -1,0 +1,151 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", san-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+  box-sizing: border-box; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 25px; }
+
+.heading-primary--main {
+  display: block;
+  font-size: 6.8rem;
+  font-weight: 400;
+  letter-spacing: 2.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  /*animation-delay*/
+  /*animation-iteration-count: 3;*/
+  animation-timing-function: ease-out; }
+
+.heading-primary--sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5rem;
+  animation: moveInRight 1s ease-out; }
+
+.btn {
+  /*
+	&:after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 10rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all .4s;
+	}
+
+	&-white:after {
+		background-color: $color-white;
+	}
+
+
+	&:hover:after {
+		transform: scaleX(1.38) scaleY(1.58);
+		opacity: 0;
+	}
+
+	*/ }
+  .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.2rem 3.2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    /*transition has to be at inital state*/
+    transition: all .1s;
+    position: relative;
+    font-size: 1.6rem; }
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:active {
+    transform: translateY(1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #fff;
+    color: #777; }
+  .btn--animated {
+    animation: moveInBottom .3s ease-out 0.7s;
+    animation-fill-mode: backwards; }
+
+.header {
+  height: 95vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.83), rgba(40, 180, 133, 0.83)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    /*left: 0; top: 0; created a 100% width */
+    /*left: 0;
+		right: 0;
+		margin: 0 auto; */
+    /* -50% no relation to the parent el, but el itself */
+    /*transform: translate(-50%, -50%);*/
+    text-align: center; }
+
+/**/
