@@ -1,9 +1,18 @@
-git pull origin master
-git commit -m "My message
-"
-git commit -m "a"
+git remote -v
 git branch
-git pull origin "project3"
+git pull origin master
+git commit
 git pull
-git stash
-git stash pop
+git add
+git add .
+git commit
+git pull
+git commit
+git pull
+git commit
+git pull
+git pull
+git commit
+git commit
+git add .
+git add
