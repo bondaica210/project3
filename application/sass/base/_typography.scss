@@ -13,7 +13,7 @@ body {
   color: $color-white;
   text-transform: uppercase;
   backface-visibility: hidden;
-  margin-bottom: 25px; }
+  margin-bottom: 2.5em; }
   .heading-primary--main {
     display: block;
     font-size: 6.8rem;
@@ -36,7 +36,23 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 1.5rem;
   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
   -webkit-background-clip: text;  
   color: transparent;
+  letter-spacing: 2px; 
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  line-height: 1.5;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
 }

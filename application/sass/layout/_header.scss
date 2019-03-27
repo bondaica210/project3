@@ -22,8 +22,8 @@
 
 	&__text-box {
 		position: absolute;
-		top: 30%;
-		width: 100%;
+		top: 40%;
+		// width: 100%;
 
 		/*left: 0; top: 0; created a 100% width */
 		/*left: 0;
@@ -31,7 +31,8 @@
 		margin: 0 auto; */
 
 		/* -50% no relation to the parent el, but el itself */
-		/*transform: translate(-50%, -50%);*/
+		left: 50%;
+		transform: translate(-50%, -50%);
 		text-align: center;
 	}
 } 

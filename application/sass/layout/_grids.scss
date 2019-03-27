@@ -1,6 +1,5 @@
 .row {
 	max-width: $grid-width;
-	background-color: #eee;
 	margin: 0 auto;
 	
 	&:not(:last-child) {
@@ -11,7 +10,7 @@
 	
 	// ^ means start with "col"
 	[class^="col-"] {
-		background-color: orangered;
+		//background-color: orangered;
 		float: left;
 
 		&:not(:last-child) {
@@ -43,4 +42,3 @@
 		width: calc(((100% - 3 * #{$gutter-horizontal}) / 4) * 3 + 2 * #{$gutter-horizontal});
 	}
 }
- 
