@@ -1,0 +1,131 @@
+.card {
+	perspective: 150rem;
+	height: 50rem;
+
+	&__side {
+		height: 50rem;
+		font-size: 2rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		border-radius: 3px;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+		transition: transform 0.8s ease;
+		backface-visibility: hidden;
+
+		&--front {
+			background-color: $color-white;
+		}
+		&--back {
+			transform: rotateY(180deg);
+			&-1 {
+				background-image: 
+				linear-gradient(to right bottom, 
+					rgba($color-secondary-light,0.83), 
+					rgba($color-secondary-dark,0.83));
+			}
+			&-2 {
+				background-image: 
+				linear-gradient(to right bottom, 
+					rgba($color-primary-light,0.83), 
+					rgba($color-primary-dark,0.83));
+			}
+			&-3 {
+				background-image: 
+				linear-gradient(to right bottom,
+				  rgba($color-tertiary-light,0.83),
+				  rgba($color-tertiary-dark,0.83));
+			}
+		}
+	}
+
+	&__price {
+		margin-top: 10rem;
+		text-align: center;
+		&--value {
+			margin-bottom: 9rem;
+		}
+	}
+
+	&__picture {
+		height: 25rem;
+		&--1 {
+			background-image: linear-gradient(to right bottom, 
+				rgba($color-secondary-light,0.33),
+				rgba($color-secondary-dark,0.23)),
+				url(../img/nat-5.jpg);
+			background-size: cover;
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+		}
+		&--2 {
+			background-image: linear-gradient(to right bottom, 
+				rgba($color-primary-light,0.33),
+				rgba($color-primary-light,0.23)),
+				url(../img/nat-6.jpg);
+			background-size: cover;
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);			
+		}
+		&--3 {
+			background-image: linear-gradient(to right bottom, 
+				rgba($color-tertiary-light,0.33),
+				rgba($color-tertiary-light,0.23)),
+				url(../img/nat-7.jpg);
+			background-size: cover;
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+		}
+
+	}
+
+	&__details {
+		text-align: center;
+		font-size: 1.8rem; 
+		color: $color-word-card;
+		& li:first-child {
+			padding-top: 2rem;
+		}
+		& li:not(:last-child) {
+			margin: 0 7rem 1rem 7rem;
+			border-bottom: 1px solid rgba(0,0,0,0.12);
+		}
+	}
+
+	&__heading {
+		font-size: 3rem;
+		color: $color-white;
+		position: absolute;
+		top: 17rem;
+		left: 0.5rem;
+		width: 100%;
+		padding: 1.5rem 2rem;
+		&-span {
+			display: inline-block;
+			font-weight: 200;
+			&--1 {
+				background-image: linear-gradient(to right bottom,
+					rgba($color-secondary-light, 0.85),
+					rgba($color-secondary-dark, 0.85));
+			}
+			&--2 {
+				background-image: 
+				linear-gradient(to right bottom, 
+					rgba($color-primary-light,0.83), 
+					rgba($color-primary-dark,0.83));
+			}
+			&--3 {
+				background-image: 
+				linear-gradient(to right bottom, 
+					rgba($color-tertiary-light,0.83), 
+					rgba($color-tertiary-dark,0.83));
+			}
+		}
+	}
+
+	&:hover &__side--front {
+		transform: rotateY(180deg);
+	}
+
+	&:hover &__side--back {
+		transform: rotateY(0);
+	}
+}

@@ -34,3 +34,13 @@ git pull
 git status
 git checkout master
 git push
+git master
+git
+git branch
+git add.
+git add .
+git commit
+git pull
+git pull origin
+git checkout master
+git push
