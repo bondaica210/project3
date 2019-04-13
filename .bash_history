@@ -44,3 +44,16 @@ git pull
 git pull origin
 git checkout master
 git push
+git commit
+git add .
+add .
+git add .
+git pull
+git push
+git branch
+git master
+git pull
+git remove -v
+git pull origin master
+git pull
+git add .
