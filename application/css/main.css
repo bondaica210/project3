@@ -1,3 +1,19 @@
+/*
+0 - 600px: phone;
+600 - 900: Tablet portrait;
+900 - 1200: Tablet landscape;
+1800+ : Big desktop;
+
+@mixin respond-phone {
+	@media (max-width: 600px) { @content };
+}
+
+$breakpoint argument
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -31,27 +47,35 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
-  font-family: "Lato", san-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
 
 ul li {
   list-style: none; }
 
 body {
-  font-family: "Lato", san-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  /*font-size: 16px;*/
   line-height: 1.7;
-  color: #777;
-  padding: 3rem;
-  box-sizing: border-box; }
+  color: #777; }
 
 .heading-primary {
   color: #fff;
