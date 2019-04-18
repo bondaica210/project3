@@ -92,9 +92,6 @@ body {
     /*animation-delay*/
     /*animation-iteration-count: 3;*/
     animation-timing-function: ease-out; }
-    @media (max-width: 56.25em) {
-      .heading-primary--main {
-        letter-spacing: 1.5rem; } }
     @media (max-width: 37.5em) {
       .heading-primary--main {
         letter-spacing: 1rem; } }
@@ -500,7 +497,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%); }
   @media (max-width: 37.5em) {
     .header {
-      height: 75vh;
+      height: 85vh;
       clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%); } }
   .header__logo-box {
     position: absolute;
@@ -519,6 +516,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+    @media (max-width: 37.5em) {
+      .header__text-box {
+        top: 50%; } }
 
 .row {
   max-width: 114rem;
@@ -607,6 +607,10 @@ body {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   cursor: pointer;
   text-align: center; }
+  @media (max-width: 37.5em) {
+    .navigation__button {
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__background {
   height: 6rem;
@@ -618,6 +622,10 @@ body {
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1); }
+  @media (max-width: 37.5em) {
+    .navigation__background {
+      top: 2rem;
+      right: 2rem; } }
 
 .navigation__nav {
   height: 100vh;

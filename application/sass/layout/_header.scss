@@ -11,7 +11,7 @@
 	clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 
 	@include respond(phone) {
-		height: 75vh;
+		height: 85vh;
 		clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 	}
 
@@ -39,5 +39,9 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		text-align: center;
+
+		@include respond(phone) {
+			top: 50%;
+		}
 	}
 } 
