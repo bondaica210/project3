@@ -57,3 +57,19 @@ git remove -v
 git pull origin master
 git pull
 git add .
+git commit
+git add .
+git push
+git master
+git branch
+git pull
+git pull origin master
+git checkout master
+git push
+git commit
+git push
+git config --global user.email bondaica210@gmail.com
+git config --global user.name huy
+git commit
+git pull
+git show
