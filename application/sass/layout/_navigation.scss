@@ -51,11 +51,13 @@
 		transform: translate(-50%, -50%);
 		list-style: none;
 		text-align: center;
+		width: 100%;
 	}
 
 	&__item {
 		margin: 1rem;
 	}
+
 
 	&__link {
 		&:link,

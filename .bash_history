@@ -73,3 +73,5 @@ git config --global user.name huy
 git commit
 git pull
 git show
+git add .
+git push
