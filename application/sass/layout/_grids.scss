@@ -6,6 +6,7 @@
 	// smaller width means smaller child
 	@include respond(tab-port) {
 			max-width: 50rem;
+			padding: 0 2rem;
 	}
 
 	&:not(:last-child) {
